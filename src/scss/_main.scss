@@ -1,0 +1,51 @@
+$main-background: #111;
+$main-color: #FEE95C;
+
+$body-background: $main-background;
+
+.main-background {
+  background-color: transparent !important;
+}
+
+.file-upload {
+  transition: background-color 0.5s ease;
+  & > span {
+    user-select: none;
+  }
+  input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  &:hover {
+    background-color: $main-color !important;
+  }
+}
+
+.instruction {
+  color: $main-color;
+  margin: 1em 0;
+  & > span {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: darken($main-color, 20%);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.controller {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  margin: 1em 1em 0 0;
+  button {
+    
+  }
+}
